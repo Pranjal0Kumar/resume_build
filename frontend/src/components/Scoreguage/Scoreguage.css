@@ -1,0 +1,22 @@
+.gauge {
+  width: 200px;
+  margin: 20px auto;
+  text-align: center;
+  position: relative;
+}
+
+.gauge-svg {
+  width: 100%;
+  height: auto;
+}
+
+.score-text {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 20px;
+  font-weight: bold;
+  color: #f2d492;
+  font-family: Raleway, sans-serif;
+}
