@@ -90,13 +90,12 @@ pymongo==4.8.0
 PyMuPDF==1.26.0
 pyotp==2.9.0
 pypdfium2==4.30.1
-pypiwin32==223
 pytesseract==0.3.13
 python-docx==1.1.2
 python-dotenv==1.1.0
 python-magic==0.4.27
 
-pywin32==306
+python-magic
 PyYAML==6.0.2
 regex==2024.11.6
 requests==2.32.3
