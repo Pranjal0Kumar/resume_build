@@ -29,7 +29,7 @@ def register():
     })
     token = jwt.encode({'username': username}, current_app.config['SECRET_KEY'], algorithm="HS256")
     msg = Message('Verify your email', sender=current_app.config['MAIL_USERNAME'], recipients=[email])
-    msg.body = f'Click to verify: http://127.0.0.1:5000/auth/verify/{token}'
+    msg.body = f'Click to verify: https://resume-build-1.onrender.com/auth/verify/{token}'
     try:
         mail.send(msg)
         return jsonify({'message': 'email sent'}), 201
