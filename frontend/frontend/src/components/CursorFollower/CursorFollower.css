@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.cursor-dot{
+    width: 1vw;
+    height: 1vw;
+    background-color: black;
+    background-blend-mode:difference;
+
+}
+
+.cursor-outline{
+    width: 3vw;
+    height: 3vw;
+    border: 2px solid hsla(0, 0%, 0%, 0.5);
+
+}
+
+.cursor-dot, .cursor-outline{
+    position: fixed;
+    top: 0;
+    left: 0;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: 1;
+}

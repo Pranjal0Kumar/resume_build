@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#pending{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    background: linear-gradient(
+        135deg,
+        #F2D492 0%,
+        #e2c382 10%,
+        #c2b07a 25%,
+        #a29970 40%,
+        #6a7260 55%,
+        #404a48 70%,
+        #202C39 85%
+        );
+}
+
+#done{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items:center;
+    background: linear-gradient(
+        135deg,
+        #F2D492 0%,
+        #e2c382 10%,
+        #c2b07a 25%,
+        #a29970 40%,
+        #6a7260 55%,
+        #404a48 70%,
+        #202C39 85%
+        );
+}
+
+iframe{
+    width: 100%;
+    padding-left: 3vw;
+    padding-right: 3vw;
+    margin-top: 4vh;
+    height: 100%;
+    margin-bottom: 4vh;
+    border: none;
+    border-radius: 20vh;
+}
+
+
+#done h2{
+    font-family: "josefin Sans", cursive;
+    font-size: 3vw;
+    padding-top: 2vw;
+}
+
+#recreate-btn{
+    background-color: #F2D492;
+    color: #202C39;
+    font-family: "josefin Sans", cursive;
+    font-weight: 700;
+    font-size: 1.5vw;
+    padding: 1vh 2vw;
+    border: none;
+    border-radius: 5px;
+    cursor: none;
+    margin-top: 2vh;
+    margin-bottom: 2vw;
+}
+
+.dotAnim::after {
+  content: '.';
+  animation: dotFlare 1s steps(3, end) infinite;
+}
+
+#download-btn{
+    background-color: #F2D492;
+    color: #202C39;
+    font-family: "josefin Sans", cursive;
+    font-weight: 700;
+    font-size: 1.5vw;
+    padding: 1vh 2vw;
+    border: none;
+    border-radius: 5px;
+    cursor: none;
+    margin-top: 2vh;
+    margin-bottom: 2vw;
+}
+#download-btn:active{
+    background-color: #202C39;
+}
+
+#recreate-btn:active{
+    background-color: #202C39;
+}
+
+
+#pending h1{
+    font-family: "josefin Sans", cursive;
+    padding-bottom: 1vw;
+    font-size: 4vw;
+}
+
+#pending h3{
+    font-family: Raleway, sans-serif;
+    font-size: 2vw;
+
+}
+
+#resume-buttons{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 2vw;
+    width: 100%;
+}

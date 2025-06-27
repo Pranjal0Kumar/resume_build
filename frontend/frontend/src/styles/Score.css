@@ -1,0 +1,171 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#score-page{
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    background-color: #f0f0f0;
+}
+#score-section{
+    background-color: #202C39;
+    width: 30%;
+    height: 100%;
+    color: #F2D492;
+    display: flex;
+    flex-direction: column;
+    padding: 2vw;
+    align-items: center;
+}
+
+
+#score-section h1{
+    font-family: Raleway, sans-serif;
+    font-weight: 800;
+    font-size: 3vw;
+    padding-bottom: 2vh;
+}
+#score-section p{
+    /*font-family: "Caveat", cursive;*/
+    font-family: "josefin Sans", sans-serif;
+    font-weight: 400;
+    font-size: 1.5vw;
+    padding-bottom: 2vh;
+    text-align: center;
+    color: white;
+}
+
+#analyse-section{
+    background-color: #F2D492;
+    width: 70%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow-y: scroll;
+}
+
+#analyse-section h1{
+    font-family: Raleway, sans-serif;
+    font-weight: 800;
+    font-size: 3vw;
+    padding-bottom: 2vh;
+    color: #202C39; 
+}
+
+
+#analyse-section p{
+    font-family: "josefin Sans", cursive;
+    font-weight: 400;
+    font-size: 1.5vw;
+    padding-bottom: 2vh;
+    text-align: center;
+    color: #202C39;
+}
+
+#analyse-btn{
+    background-color: #202C39;
+    color: #F2D492;
+    font-family: "josefin Sans", cursive;
+    font-weight: 400;
+    font-size: 1.5vw;
+    padding: 1vh 2vw;
+    border: none;
+    border-radius: 5px;
+    cursor: none;
+    margin-top: 2vh;
+}
+
+#analyse-btn:active{
+    background-color: #F2D492;
+    color: #202C39;
+    cursor: none;
+}
+
+.dotAnim::after {
+  content: '.';
+  animation: dotFlare 1s steps(3, end) infinite;
+}
+
+@keyframes dotFlare {
+  0%   { content: '.'; }
+  33%  { content: '..'; }
+  66%  { content: '...'; }
+  100% { content: '.'; }
+}
+
+#analyse-section-non_center{
+    background-color: #F2D492;
+    width: 70%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+    padding-left: 5vw;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+}
+
+
+#analyse-section-non_center h2{
+    font-family: Raleway, sans-serif;
+    font-weight: 800;
+    font-size: 3vw;
+    padding-bottom: 2vh;
+    color: #202C39; 
+}
+
+#analyse-section-non_center li{
+    font-family: "josefin Sans", cursive;
+    font-weight: 400;
+    font-size: 1.5vw;
+    padding-bottom: 2vh;
+    text-align: start;
+    color: #202C39;
+    padding-bottom: 4vh;
+}
+#analyse-section-non_center ul {
+  list-style: none;   /* removes the dots */
+  margin: 0;          /* optional: reset spacing */
+  padding: 0;
+}
+
+#analyse-btn{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#reanalyse{
+    background-color: #202C39;
+    color: #F2D492;
+    font-family: "josefin Sans", cursive;
+    font-weight: 400;
+    font-size: 1.5vw;
+    padding: 1vh 2vw;
+    border: none;
+    border-radius: 5px;
+    cursor: none;
+    margin-top: 2vh;
+}
+
+#create{
+    background-color: #202C39;
+    color: #F2D492;
+    font-family: "josefin Sans", cursive;
+    font-weight: 400;
+    font-size: 1.5vw;
+    padding: 1vh 2vw;
+    border: none;
+    border-radius: 5px;
+    cursor: none;
+    margin-top: 2vh;
+}
+
+#create:active{
+    background-color: #F2D492;
+}
