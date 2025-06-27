@@ -71,7 +71,7 @@ const Resume = () => {
   useEffect(() => {
     setCodeStatus('pending');
     axios
-      .get('http://127.0.0.1:5000/api/create-resume',{
+      .get('https://resume-build-1.onrender.com/api/create-resume',{
         headers:{
           Authorization: `Bearer ${localStorage.getItem('token')}`
         }

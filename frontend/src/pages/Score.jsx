@@ -16,7 +16,7 @@ const Score = () => {
     e.preventDefault();
     setStatus("Analyzing");
     try{
-       const response = await axios.get('http://127.0.0.1:5000/api/analyse')
+       const response = await axios.get('https://resume-build-1.onrender.com/api/analyse')
        setAnalysis(response.data);
        setStatus("Analyzed");
     }catch(err){
@@ -29,12 +29,12 @@ const Score = () => {
   const create_resume = (e) =>{
 
     e.preventDefault();
-    //axios.get('http://127.0.0.1:5000/api/create-resume')
+    //axios.get('https://resume-build-1.onrender.com0/api/create-resume')
     navigate('/create-resume')
   }
 
   useEffect(() => {
-    axios.get('http://127.0.0.1:5000/api/score')
+    axios.get('https://resume-build-1.onrender.com/api/score')
     .then(res => {setScore(res.data)})
     .catch(err => console.error(err));
   },[])

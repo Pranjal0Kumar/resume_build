@@ -33,7 +33,7 @@ const Home = () => {
         formData.append("resume", resumeFile); // resumeFile = selected resume
         formData.append("jd", jdFile);         // jdFile = selected job description
 
-        const res = axios.post('http://127.0.0.1:5000/api/score', formData, {
+        const res = axios.post('https://resume-build-1.onrender.com/api/score', formData, {
         headers: {
             'Content-Type': 'multipart/form-data'
         }

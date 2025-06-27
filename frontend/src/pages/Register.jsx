@@ -9,7 +9,7 @@ const Register = () => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        axios.post('http://127.0.0.1:5000/auth/register',{
+        axios.post('https://resume-build-1.onrender.com/auth/register',{
             username: e.target.username.value,
             email: e.target.email.value,
             password: e.target.password.value,
